@@ -1,4 +1,6 @@
-export default function ProjectCard({ title, summary, image, github, itchio }) {
+export default function ProjectCard({ title, summary, image, github, demo, itchio }) {
+  const projectLink = demo || itchio;
+
   return (
     <div className="col-12 col-md-6 col-lg-4">
       <article className="card brand-surface h-100 shadow-sm border-0">
@@ -13,9 +15,9 @@ export default function ProjectCard({ title, summary, image, github, itchio }) {
               GitHub
             </a>
 
-            {itchio ? (
-              <a href={itchio} target="_blank" rel="noreferrer" className="btn btn-outline-danger btn-sm">
-                Itch.io
+            {projectLink ? (
+              <a href={projectLink} target="_blank" rel="noreferrer" className="btn btn-outline-danger btn-sm">
+                Try it
               </a>
             ) : null}
           </div>

@@ -1,30 +1,14 @@
 import ProjectCard from "../components/ProjectCard.jsx";
-
+import periodicTableImage from "../assets/projects/periodicTable.png";
 export default function Projects() {
   const projects = [
     {
-      title: "Pixel Quest",
+      title: "Periodic Table",
       summary:
-        "Juego 2D de aventura con mecánicas simples de combate y exploración. Construido para practicar diseño de niveles.",
-      image: "https://via.placeholder.com/800x450?text=Pixel+Quest",
-      github: "https://github.com/tu-usuario/pixel-quest",
-      itchio: "https://tu-usuario.itch.io/pixel-quest",
-    },
-    {
-      title: "TaskFlow App",
-      summary:
-        "Aplicación web para organizar tareas por prioridad y estado con una interfaz limpia y rápida.",
-      image: "https://via.placeholder.com/800x450?text=TaskFlow+App",
-      github: "https://github.com/tu-usuario/taskflow-app",
-      itchio: "",
-    },
-    {
-      title: "Cosmic Runner",
-      summary:
-        "Prototipo de juego arcade estilo endless runner con mejoras de rendimiento y controles responsivos.",
-      image: "https://via.placeholder.com/800x450?text=Cosmic+Runner",
-      github: "https://github.com/tu-usuario/cosmic-runner",
-      itchio: "https://tu-usuario.itch.io/cosmic-runner",
+        "Interactive periodic table with detailed information about each element and category-based filters",
+      image: periodicTableImage,
+      github: "https://github.com/be-cky/periodic-table",
+      demo: "https://be-cky.github.io/periodic-table/",
     },
   ];
 
@@ -36,7 +20,7 @@ export default function Projects() {
       <div className="w-100" style={{ maxWidth: "1200px", marginTop: "5rem" }}>
       <div className="text-center mb-4">
         <h1 className="h2 mb-2">Projects</h1>
-        <p className="text-muted mb-0">Aquí puedes mostrar tus proyectos con resumen y enlaces de publicación.</p>
+        <p className="text-muted mb-0">Below you can find a selection of projects I have developed during my studies and personal learning. They reflect my interest in software development and my continuous effort to improve my technical skills.</p>
       </div>
 
       <div className="row g-4">
